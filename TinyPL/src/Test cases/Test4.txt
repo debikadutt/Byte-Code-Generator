@@ -1,0 +1,28 @@
+Enter an expression, end with semi-colon!
+
+
+
+int x, y;
+
+if (x > y) 
+
+   {x = x - y;}
+
+end
+
+0: iload_1
+
+1: iload_2
+
+2: if_icmple 9
+
+5: iload_1
+
+6: iload_2
+
+7: isub
+
+8: istore_1
+
+9: return
+

@@ -1,0 +1,28 @@
+Enter an expression, end with semi-colon!
+
+
+
+int i, j, k;
+
+i = 5;
+
+j = 127;
+
+k = 128;
+
+end
+
+0: iconst_5
+
+1: istore_1
+
+2: bipush 127
+
+4: istore_2
+
+5: sipush 128
+
+8: istore_3
+
+9: return
+

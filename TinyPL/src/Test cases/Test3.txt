@@ -1,0 +1,83 @@
+Enter an expression, end with semi-colon!
+
+
+
+int x, y, z, p, q;
+
+x = 1;
+
+y = x*10 + 1;
+
+z = y*100 + x + 10;
+
+p = ((x + 1) * (y - 20)) / (z+300);
+
+q = p * p;
+
+end
+
+0: iconst_1
+
+1: istore_1
+
+2: iload_1
+
+3: bipush 10
+
+5: imul
+
+6: iconst_1
+
+7: iadd
+
+8: istore_2
+
+9: iload_2
+
+10: bipush 100
+
+12: imul
+
+13: iload_1
+
+14: bipush 10
+
+16: iadd
+
+17: iadd
+
+18: istore_3
+
+19: iload_1
+
+20: iconst_1
+
+21: iadd
+
+22: iload_2
+
+23: bipush 20
+
+25: isub
+
+26: imul
+
+27: iload_3
+
+28: sipush 300
+
+31: iadd
+
+32: idiv
+
+33: istore 4
+
+35: iload 4
+
+37: iload 4
+
+39: imul
+
+40: istore 5
+
+42: return

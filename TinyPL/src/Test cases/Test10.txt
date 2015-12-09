@@ -1,0 +1,117 @@
+Enter an expression, end with semi-colon!
+
+
+
+int n, s, i, p;
+
+n = 61;
+
+for (s=1 ; s*s < n ;)
+
+      s = s + 1;
+
+i = 2;
+
+p = 1;
+
+for ( ; i < s+1 ; i = i+1 ) {
+
+      if (p == 1) 
+
+if ( (n/i)*i == n)
+
+  p = 0;
+
+}
+
+end
+
+0: bipush 61
+
+2: istore_1
+
+3: iconst_1
+
+4: istore_2
+
+5: iload_2
+
+6: iload_2
+
+7: imul
+
+8: iload_1
+
+9: if_icmpge 18
+
+12: iload_2
+
+13: iconst_1
+
+14: iadd
+
+15: istore_2
+
+16: goto 5
+
+18: iconst_2
+
+19: istore_3
+
+20: iconst_1
+
+21: istore 4
+
+23: iload_3
+
+24: iload_2
+
+25: iconst_1
+
+26: iadd
+
+27: if_icmpge 58
+
+30: iload_3
+
+31: iconst_1
+
+32: iadd
+
+33: istore_3
+
+34: iload 4
+
+36: iconst_1
+
+37: if_icmpne 52
+
+40: iload_1
+
+41: iload_3
+
+42: idiv
+
+43: iload_3
+
+44: imul
+
+45: iload_1
+
+46: if_icmpne 52
+
+49: iconst_0
+
+50: istore 4
+
+52: iload_3
+
+53: iconst_1
+
+54: iadd
+
+55: istore_3
+
+56: goto 23
+
+58: return

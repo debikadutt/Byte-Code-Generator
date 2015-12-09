@@ -1,0 +1,62 @@
+Enter an expression, end with semi-colon!
+
+
+
+int x, y;
+
+x = 121;
+
+y = 132;
+
+for( ; x != y ; )
+
+  if (x > y) 
+
+        x = x - y; 
+
+  else  y = y - x;
+
+end
+
+0: bipush 121
+
+2: istore_1
+
+3: sipush 132
+
+6: istore_2
+
+7: iload_1
+
+8: iload_2
+
+9: if_icmpeq 30
+
+12: iload_1
+
+13: iload_2
+
+14: if_icmple 24
+
+17: iload_1
+
+18: iload_2
+
+19: isub
+
+20: istore_1
+
+21: goto 28
+
+24: iload_2
+
+25: iload_1
+
+26: isub
+
+27: istore_2
+
+28: goto 7
+
+30: return
+

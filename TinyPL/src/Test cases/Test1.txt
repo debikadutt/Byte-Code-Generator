@@ -1,0 +1,15 @@
+Enter an expression, end with semi-colon!
+
+
+
+int i;
+
+i=0;
+
+end
+
+0: iconst_0
+
+1: istore_1
+
+2: return

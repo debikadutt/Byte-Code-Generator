@@ -1,0 +1,83 @@
+Enter an expression, end with semi-colon!
+
+
+
+int i, j, k, m;
+
+i = 1;
+
+j = 111;
+
+k = 11111;
+
+if (i < j) 
+
+   if (j < k) 
+
+      m = k;
+
+    else m = j;
+
+ else 
+
+   if (i < k) 
+
+      m = k;
+
+   else m = i;
+
+end
+
+0: iconst_1
+
+1: istore_1
+
+2: bipush 111
+
+4: istore_2
+
+5: sipush 11111
+
+8: istore_3
+
+9: iload_1
+
+10: iload_2
+
+11: if_icmpge 31
+
+14: iload_2
+
+15: iload_3
+
+16: if_icmpge 25
+
+19: iload_3
+
+20: istore 4
+
+22: goto 28
+
+25: iload_2
+
+26: istore 4
+
+28: goto 45
+
+31: iload_1
+
+32: iload_3
+
+33: if_icmpge 42
+
+36: iload_3
+
+37: istore 4
+
+39: goto 45
+
+42: iload_1
+
+43: istore 4
+
+45: return

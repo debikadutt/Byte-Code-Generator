@@ -1,0 +1,53 @@
+Enter an expression, end with semi-colon!
+
+
+
+int x, y;
+
+x = 10;
+
+y = 20;
+
+if (x > y) 
+
+   {x = x - y;}
+
+else 
+
+   {y = y - x;}
+
+end
+
+0: bipush 10
+
+2: istore_1
+
+3: bipush 20
+
+5: istore_2
+
+6: iload_1
+
+7: iload_2
+
+8: if_icmple 18
+
+11: iload_1
+
+12: iload_2
+
+13: isub
+
+14: istore_1
+
+15: goto 22
+
+18: iload_2
+
+19: iload_1
+
+20: isub
+
+21: istore_2
+
+22: return
