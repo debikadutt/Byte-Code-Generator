@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.HashMap;
 
 //program -> decls stmts end 
 //decls -> int idlist ';' 
